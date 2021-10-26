@@ -26,7 +26,6 @@ def show_frame():
     while True:
         _, img = cap.read()
         cv2.imshow("test", img)
-        # cv2.imwrite(directory+ str(x) +'.'+ str(y) + '.jpg', img)
         interrupt = cv2.waitKey(10)
         if interrupt & 0xFF == 27: # esc key
             break
