@@ -41,7 +41,7 @@ def tkinter_frame():
         x = random.randint(0, 1355)
         y = random.randint(0, 756)
         print(x, y)
-        create_circle(x, y, 20, myCanvas)
+        create_circle(x, y, 10, myCanvas)
 
     def create_circle(x, y, r, canvasName): #center coordinates, radius
         def on_click():
