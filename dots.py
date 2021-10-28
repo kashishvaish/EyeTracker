@@ -45,9 +45,9 @@ def tkinter_frame():
 
     def create_circle(x, y, r, canvasName): #center coordinates, radius
         def on_click():
+            cv2.imwrite(directory+ str(x) + '.' + str(y) + '.' + datetime.datetime.now().strftime("%m%d%Y%H%M%S") +'.jpg', img)
             canvasName.delete(dot)
             random_circle()
-            cv2.imwrite(directory+ str(x) + '.' + str(y) + '.' + datetime.datetime.now().strftime("%m%d%Y%H%M%S") +'.jpg', img)
 
         x0 = x - r
         y0 = y - r
