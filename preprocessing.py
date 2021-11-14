@@ -2,7 +2,7 @@ import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
 
-img = cv.imread('images\train\0.515.10272021230548.jpg',0)
+img = cv.imread('images_old\train\0.515.10272021230548.jpg',0)
 edges = cv.Canny(img,100,200)
 plt.subplot(121),plt.imshow(img,cmap = 'gray')
 plt.title('Original Image'), plt.xticks([]), plt.yticks([])
