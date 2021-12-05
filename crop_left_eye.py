@@ -2,14 +2,14 @@ import numpy as np
 import cv2
 import os
 
-source = "dataset"
-destination = "eyes/"
+source = "images/train"
+destination = "left_eyes_data/"
 
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades +'haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades +'haarcascade_eye.xml')
 
-if not os.path.exists("eyes"):
-    os.makedirs("eyes")
+if not os.path.exists("left_eyes_data"):
+    os.makedirs("left_eyes_data")
 
 for filename in os.listdir(source):
     img = cv2.imread(os.path.join(source,filename))
