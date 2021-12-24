@@ -42,10 +42,10 @@ def tkinter_frame():
         print(x, y)
         create_circle(x, y, 10, myCanvas)
         x += 20
-        if x >= 1355:
+        if x >= 1920:
             x = 0
             y+=20
-        if y >= 756 and x >= 1355:
+        if y >= 1080 and x >= 1920:
             x = 0
             y = 0
 

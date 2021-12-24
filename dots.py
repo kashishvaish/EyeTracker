@@ -38,8 +38,8 @@ def tkinter_frame():
     myCanvas.pack(fill=BOTH, expand=True)
     def random_circle():
         global x, y
-        x = random.randint(0, 1355)
-        y = random.randint(0, 756)
+        x = random.randint(0, 1920)
+        y = random.randint(0, 1080)
         print(x, y)
         create_circle(x, y, 10, myCanvas)
 
